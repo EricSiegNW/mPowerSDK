@@ -97,6 +97,10 @@ static NSString *const kAppStoreLink                    = @"https://appsto.re/us
     return HKUpdateFrequencyImmediate;
 }
 
+- (BOOL)promptUserToContinueActivities {
+    return YES;
+}
+
 - (NSInteger)environment {
 #if DEBUG
     return SBBEnvironmentStaging;
